@@ -1,0 +1,117 @@
+header {
+    background: linear-gradient(to bottom, #013a63, #0077b6);
+    background-image: url("../images/nudibranquio-fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .header-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #caf0f8;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li a {
+    color: #90e0ef;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffbe0b;
+  }
+  
+  header {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* oscurece ligeramente */
+    z-index: 0;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  nav ul li a {
+    color: white; /* cambia a blanco para que resalte */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* agrega sombra */
+  }
+
+  .bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none; /* No interfiere con el mouse */
+    z-index: 1;
+  }
+  
+  .bubbles span {
+    position: absolute;
+    bottom: -60px;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rise 8s infinite ease-in;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  .bubbles span:nth-child(1) { left: 10%; animation-delay: 0s; }
+  .bubbles span:nth-child(2) { left: 20%; animation-delay: 1s; }
+  .bubbles span:nth-child(3) { left: 30%; animation-delay: 2s; }
+  .bubbles span:nth-child(4) { left: 40%; animation-delay: 0.5s; }
+  .bubbles span:nth-child(5) { left: 50%; animation-delay: 1.5s; }
+  .bubbles span:nth-child(6) { left: 60%; animation-delay: 2.5s; }
+  .bubbles span:nth-child(7) { left: 70%; animation-delay: 0.3s; }
+  .bubbles span:nth-child(8) { left: 80%; animation-delay: 1.3s; }
+  .bubbles span:nth-child(9) { left: 90%; animation-delay: 2.2s; }
+  .bubbles span:nth-child(10) { left: 95%; animation-delay: 0.7s; }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(0) scale(0.5);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.4;
+    }
+    100% {
+      transform: translateY(-500px) scale(1);
+      opacity: 0;
+    }
+  }
+  
