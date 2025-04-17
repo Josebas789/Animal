@@ -1,5 +1,5 @@
+/*heaseer y barra */
 header {
-    background: linear-gradient(to bottom, #013a63, #0077b6);
     background-image: url("../images/nudibranquio-fondo.jpg");
     background-size: cover;
     background-position: center;
@@ -42,24 +42,16 @@ header {
     color: #ffbe0b;
   }
   
-  header {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
-  
   header::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.3); 
-    z-index: 0;
   }
   
   .header-content {
     position: relative;
-    z-index: 1;
   }
   
   nav ul li a {
@@ -67,6 +59,7 @@ header {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6); 
   }
 
+  /* burbujitas */
   .bubbles {
     position: absolute;
     width: 100%;
@@ -115,6 +108,8 @@ header {
     }
   }
 
+  /* primera seccion home */
+
   .inicio {
     background-color: #e0f7fa;
     padding: 60px 20px;
@@ -155,6 +150,8 @@ header {
     background-color: #00b4d8;
   }
   
+/* primera galeria */
+
   .galeria-inicio {
     display: flex;
     justify-content: center;
@@ -175,6 +172,7 @@ header {
     transform: scale(1.05);
   }
   
+/* seccion de links a externos */
   .links-externos {
     background-color: #caf0f8;
     padding: 60px 20px;
@@ -212,6 +210,8 @@ header {
     color: #023e8a;
     text-decoration: underline;
   }
+
+/* footer */
 
   footer {
     background-color: #03045e;
@@ -258,8 +258,11 @@ header {
     color: #ffbe0b;
   }
   
+/*seccion de fichas */
+
     .fichas-info {
     padding: 60px 30px;
+    margin-top: 0px;
     padding-bottom: 0px;
     text-align: center;
   }
@@ -269,6 +272,8 @@ header {
     margin-bottom: 40px;
   }
   
+  /* crtas pokemon */
+
   .tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -277,6 +282,7 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px 0;
+    padding-top: 20px;
   }
   
   .tarjeta {
@@ -316,7 +322,7 @@ header {
 }
 
   .frente {
-    background: linear-gradient(to bottom, #e0f7fa, #caf0f8);
+    background:#caf0f8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,6 +357,8 @@ header {
     border-radius: 15px;
   }
 
+/* status tabla */
+
   .tabla-desplegable {
     max-width: 800px;
     margin: 40px auto;
@@ -368,10 +376,6 @@ header {
     font-size: 1.2rem;
     color: #0077b6;
     padding: 10px;
-  }
-  
-  .tabla-desplegable[open] summary {
-    color: #023e8a;
   }
   
   .tabla-desplegable table {
@@ -396,6 +400,8 @@ header {
     background-color: #e0f7fa;
   }
   
+  /* centrado de cosas y colores */
+
   html, body {
     background-color: #e0f7fa; 
     margin: 0;
@@ -407,7 +413,7 @@ header {
     margin-bottom: 30px;
   }
 
-  /* Galeria */
+  /* Galeria carrusel */
   .carrusel-css {
     background-color: #e6f7ff;
     padding: 40px 0;
@@ -515,7 +521,9 @@ header {
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0,0,0,0.3);
   }
-  
+   
+/*boton cerrar */
+
   .cerrar {
     position: absolute;
     top: 15px;
@@ -539,7 +547,50 @@ header {
     background-color: #023e8a;
   }
 
-  /*galeria*/
+  /*galeria simple */
+
+  .galeria-preview {
+    background-color: #e6f7ff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+  }
+  
+  .item-galeria {
+    width: 180px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .item-galeria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .item-galeria img:hover {
+    transform: scale(1.05);
+  }
+  
+  .item-galeria p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #023e8a;
+  }
+  
+ /* formulario */ 
+
   .formulario-contacto {
     max-width: 500px;
     margin: 50px auto;
@@ -594,6 +645,8 @@ header {
     background-color: #023e8a;
   }
   
+  /* mensaje */
+
   .mensaje-gracias {
     display: none;
     background-color: #d1f7e0;
